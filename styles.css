@@ -1,0 +1,101 @@
+img{
+    width: 0px;
+    height: 0px;
+}
+
+.eyes{
+    padding: 25px;
+    top: 200px;
+    position: absolute;
+    z-index: 10;
+}
+
+#REye{
+    left: 240px;
+    background-color: aqua;
+
+}
+
+#LEye{
+    left: 160px;
+    background-color: pink;
+}
+
+#head{
+    padding: 75px;
+    background-color: green;
+    position: absolute;
+    left: 150px;
+    z-index: 9;
+}
+
+#crown{
+    padding: 70px 45px;
+    background-color: darkgoldenrod;
+    position: absolute;
+    left: 125px;
+    top: 75px;
+    transform: rotate(-25deg);
+    z-index: 8;
+}
+
+.fullarms{
+    position: absolute;
+}
+
+.shoulder{
+    background-color: rgb(132, 0, 255);
+    padding: 40px;
+    top: 300px;
+    z-index: 3;
+}
+
+#LShoulder{
+    left: 75px;
+}
+
+#RShoulder{
+    left: 295px;
+}
+
+#LArm{
+    left: 90px;
+}
+
+#RArm{
+    left: 310px;
+}
+
+#LHand{
+    left: 85px;
+}
+
+#RHand{
+    left: 305px;
+}
+
+.arm{
+    background-color: rgb(255, 0, 191);
+    padding: 50px 25px;
+    top: 350px;
+    z-index: 1;
+}
+
+.hand{
+    background-color: rgb(144, 96, 255);
+    padding: 30px;
+    top: 425px;
+    z-index: 2;
+}
+
+.hair{
+    width: 120px;
+    height: 100px;
+    padding: 100px;
+    margin: 10px;
+    background-color: blue;
+}
+
+body{
+    background-color: yellow;
+}
