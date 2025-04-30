@@ -10,50 +10,62 @@
 
         <style>
 
+            .flexContainer{
+                display: flex;
+                flex-direction: row;
+            }
+
             #character
             {
                 position: relative;
-                left: 200px;
+                width: 500px;
+            }
+
+            img{
+                width: 350px;
             }
 
             #brows{
-                background-color: white;
+                position: absolute;
+                z-index: 99;
+            }
+
+            #mouth{
+                position: absolute;
+                z-index: 99;
+            }
+
+            #nose{
                 position: absolute;
                 z-index: 99;
             }
 
             #bangs{
-                background-color: pink;
                 position: absolute;
                 z-index: 98;
             }
 
             #eyes{
-                background-color: yellow;
                 position: absolute;
                 z-index: 97;
             }
 
             #head{
-                background-color: green;
                 position: absolute;
                 z-index: 96;
             }
 
             #MHair {
-                background-color: rgb(128, 0, 0);
                 position: absolute;
                 z-index: 95;
             }
 
             #crown{
-                background-color: darkgoldenrod;
                 position: absolute;
-                z-index: 94;
+                z-index: 1;
             }
 
             #torso{
-                background-color: darkgreen;
                 position: absolute;
                 z-index: 93;
             }
@@ -63,29 +75,34 @@
             }
 
             .hand{
-                background-color: rgb(144, 96, 255);
                 z-index: 92;
             }
 
             .shoulder{
-                background-color: rgb(132, 0, 255);
                 z-index: 91;
             }
 
             #dress{
-                background-color: darkgreen;
                 position: absolute;
                 z-index: 90;
             }
 
-            .hair{
-                background-color: blue;
+            #LHair{
                 position: absolute;
-                z-index: 0;
+                z-index: -1;
+            }
+
+            #RHair{
+                position: absolute;
+                z-index: -11;
+            }
+
+            #MHair{
+                position: absolute;
+                z-index: 10;
             }
 
             #feet{
-                background-color: aqua;
                 position: absolute;
                 z-index: 1;
             }
@@ -97,106 +114,110 @@
 
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><img>1</li>
-                <li><img>2</li>
-                <li><img>3</li>
-                <li><img>4</li>
-                <li><img>5</li>
-                <li><img>6</li>
-                <li><img>7</li>
-            </ul>
-        </nav>
 
-        <div id="character" class="container">
-            <span id="brows">
-                <!--Change Image-->
-                <img src="projectAssets/brows.png">
-            </span>
+        <span class="flexContainer">
 
-            <span id="nose">
-                <!--Change Image-->
-                <img src="projectAssets/nose.png">
-            </span>
-
-            <span id="bangs">
-                <!--Change Image-->
-                <img src="projectAssets/bangs.png">
-            </span>
-
-            <span id="eyes">
-                <!--Change Image-->
-                <img src="projectAssets/eyesOpened.png"  >
-            </span>
-
-            <span id="mouth">
-                <!--Change Image-->
-                <img src="projectAssets/mouth.png"  >
-            </span>
-
-            <span id="head">
-                <!--Change Animation-->
-                <img src="projectAssets/head.png"  >
-            </span>
-
-            <span id="crown">
-                <!--Change Animation-->
-                <img src="projectAssets/crown.png"  >
-            </span>
-
-            <span id="LShoulder" class="fullarms shoulder">
-                <!--Change Animation-->
-                <img src="projectAssets/shoulderLeft.png"  >
-            </span>
-
-            <span id="LHand" class="fullarms hand">
-                <!--Change Animation & Image-->
-                <img src="projectAssets/handLeft.png"  >
-            </span>
-
-            <span id="RShoulder" class="fullarms shoulder">
-                <!--Change Animation-->
-                <img src="projectAssets/shoulderRight.png"  >
-            </span>
-
-            <span id="RHand" class="fullarms hand">
-                <!--Change Animation & Image-->
-                <img src="projectAssets/hairRight.png"  >
-            </span>
-
-            <span id="torso" class="body">
-                <!--Change Animation-->
-                <img src="projectAssets/torso.png"  >
-            </span>
-
-            <span id="dress" class="body">
-                <!--Change Animation-->
-                <img src="projectAssets/dress.png"  >
-            </span>
-
-            <span id="feet" class="body">
-                <!--Change Animation-->
-                <img src="projectAssets/feet.png"  >
-            </span>
-            
-            <span id="LHair" class="hair">
-                <!--Change Animation-->
-                <img src="projectAssets/hairLeft.png"  >
-            </span>
-
-            <span id="MHair" class="hair">
-                <!--Change Animation-->
-                <img src="projectAssets/hairMain.png"  >
-            </span>
+            <nav>
+                <ul>
+                    <li><img>1</li>
+                    <li><img>2</li>
+                    <li><img>3</li>
+                    <li><img>4</li>
+                    <li><img>5</li>
+                    <li><img>6</li>
+                    <li><img>7</li>
+                </ul>
+            </nav>
+    
+            <div id="character" class="container">
+                <span id="brows">
+                    <!--Change Image-->
+                    <img src="projectAssets/brows.png">
+                </span>
+    
+                <span id="nose">
+                    <!--Change Image-->
+                    <img src="projectAssets/nose.png">
+                </span>
+    
+                <span id="bangs">
+                    <!--Change Image-->
+                    <img src="projectAssets/bangs.png">
+                </span>
+    
+                <span id="eyes">
+                    <!--Change Image-->
+                    <img src="projectAssets/eyesOpened.png"  >
+                </span>
+    
+                <span id="mouth">
+                    <!--Change Image-->
+                    <img src="projectAssets/mouth.png"  >
+                </span>
+    
+                <span id="head">
+                    <!--Change Animation-->
+                    <img src="projectAssets/head.png"  >
+                </span>
+    
+                <span id="crown">
+                    <!--Change Animation-->
+                    <img src="projectAssets/crown.png"  >
+                </span>
+    
+                <span id="LShoulder" class="fullarms shoulder">
+                    <!--Change Animation-->
+                    <img src="projectAssets/shoulderLeft.png"  >
+                </span>
+    
+                <span id="LHand" class="fullarms hand">
+                    <!--Change Animation & Image-->
+                    <img src="projectAssets/handLeft.png"  >
+                </span>
+    
+                <span id="RShoulder" class="fullarms shoulder">
+                    <!--Change Animation-->
+                    <img src="projectAssets/shoulderRight.png"  >
+                </span>
+    
+                <span id="RHand" class="fullarms hand">
+                    <!--Change Animation & Image-->
+                    <img src="projectAssets/handRight.png"  >
+                </span>
+    
+                <span id="torso" class="body">
+                    <!--Change Animation-->
+                    <img src="projectAssets/torso.png"  >
+                </span>
+    
+                <span id="dress" class="body">
+                    <!--Change Animation-->
+                    <img src="projectAssets/dress.png"  >
+                </span>
+    
+                <span id="feet" class="body">
+                    <!--Change Animation-->
+                    <img src="projectAssets/feet.png"  >
+                </span>
                 
-            <span id="RHair" class="hair">
-                <!--Change Animation-->
-                <img src="projectAssets/hairRight.png"  >
-            </span>
+                <span id="LHair" class="hair">
+                    <!--Change Animation-->
+                    <img src="projectAssets/hairLeft.png"  >
+                </span>
+    
+                <span id="MHair" class="hair">
+                    <!--Change Animation-->
+                    <img src="projectAssets/hairMain.png"  >
+                </span>
+                    
+                <span id="RHair" class="hair">
+                    <!--Change Animation-->
+                    <img src="projectAssets/hairRight.png"  >
+                </span>
+            </div>
 
-            <span id=""></span>
-        </div>
+        </span>
+        
         
     </body>
 </html>
