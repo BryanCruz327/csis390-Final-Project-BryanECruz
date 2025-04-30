@@ -9,123 +9,86 @@
         <script src="script.js" defer></script>
 
         <style>
-            img{
-                width: 0px;
-                height: 0px;
+
+            #character
+            {
+                position: relative;
+                left: 200px;
             }
 
-            .eyes{
-                padding: 25px;
-                top: 200px;
+            #brows{
+                background-color: white;
                 position: absolute;
-                z-index: 10;
+                z-index: 99;
             }
 
-            #REye{
-                left: 240px;
-                background-color: aqua;
-
-            }
-
-            #LEye{
-                left: 160px;
+            #bangs{
                 background-color: pink;
+                position: absolute;
+                z-index: 98;
+            }
+
+            #eyes{
+                background-color: yellow;
+                position: absolute;
+                z-index: 97;
             }
 
             #head{
-                padding: 75px;
                 background-color: green;
                 position: absolute;
-                left: 150px;
-                z-index: 9;
+                z-index: 96;
+            }
+
+            #MHair {
+                background-color: rgb(128, 0, 0);
+                position: absolute;
+                z-index: 95;
             }
 
             #crown{
-                padding: 70px 45px;
                 background-color: darkgoldenrod;
                 position: absolute;
-                left: 125px;
-                top: 75px;
-                transform: rotate(-25deg);
-                z-index: 8;
-            }
-
-            .body{
-                position: absolute;
-                background-color: rgb(0, 255, 85);
+                z-index: 94;
             }
 
             #torso{
-                padding: 70px 75px;
-                top: 300px;
-                left: 150px;
                 background-color: darkgreen;
-            }
-
-            #dress{
-                top: 425px;
-                left: 50px;
-                padding: 100px 175px;
+                position: absolute;
+                z-index: 93;
             }
 
             .fullarms{
                 position: absolute;
             }
 
-            .shoulder{
-                background-color: rgb(132, 0, 255);
-                padding: 40px;
-                top: 300px;
-                z-index: 3;
-            }
-
-            #LShoulder{
-                left: 75px;
-            }
-
-            #RShoulder{
-                left: 295px;
-            }
-
-            #LArm{
-                left: 90px;
-            }
-
-            #RArm{
-                left: 310px;
-            }
-
-            #LHand{
-                left: 85px;
-            }
-
-            #RHand{
-                left: 305px;
-            }
-
-            .arm{
-                background-color: rgb(255, 0, 191);
-                padding: 50px 25px;
-                top: 350px;
-                z-index: 1;
-            }
-
             .hand{
                 background-color: rgb(144, 96, 255);
-                padding: 30px;
-                top: 425px;
-                z-index: 2;
+                z-index: 92;
+            }
+
+            .shoulder{
+                background-color: rgb(132, 0, 255);
+                z-index: 91;
+            }
+
+            #dress{
+                background-color: darkgreen;
+                position: absolute;
+                z-index: 90;
             }
 
             .hair{
-                width: 120px;
-                height: 100px;
-                padding: 100px;
-                margin: 10px;
                 background-color: blue;
+                position: absolute;
+                z-index: 0;
             }
 
-
+            #feet{
+                background-color: aqua;
+                position: absolute;
+                z-index: 1;
+            }
 
             body{
                 background-color: rgb(255, 255, 0);
@@ -147,79 +110,89 @@
         </nav>
 
         <div id="character" class="container">
-            <span id="LEye" class="eyes">
+            <span id="brows">
                 <!--Change Image-->
-                <!--<img>-->
+                <img src="projectAssets/brows.png">
             </span>
 
-            <span id="REye" class="eyes">
+            <span id="nose">
                 <!--Change Image-->
-                <!--<img>-->
+                <img src="projectAssets/nose.png">
+            </span>
+
+            <span id="bangs">
+                <!--Change Image-->
+                <img src="projectAssets/bangs.png">
+            </span>
+
+            <span id="eyes">
+                <!--Change Image-->
+                <img src="projectAssets/eyesOpened.png"  >
             </span>
 
             <span id="mouth">
                 <!--Change Image-->
-                <!--<img>-->
+                <img src="projectAssets/mouth.png"  >
             </span>
 
             <span id="head">
                 <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/head.png"  >
             </span>
 
             <span id="crown">
                 <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/crown.png"  >
             </span>
 
             <span id="LShoulder" class="fullarms shoulder">
                 <!--Change Animation-->
-                <!--<img>-->
-            </span>
-
-            <span id="LArm" class="fullarms arm">
-                <!--Change Animation & Image-->
-                <!--<img>-->
+                <img src="projectAssets/shoulderLeft.png"  >
             </span>
 
             <span id="LHand" class="fullarms hand">
                 <!--Change Animation & Image-->
-                <!--<img>-->
+                <img src="projectAssets/handLeft.png"  >
             </span>
 
             <span id="RShoulder" class="fullarms shoulder">
                 <!--Change Animation-->
-                <!--<img>-->
-            </span>
-
-            <span id="RArm" class="fullarms arm">
-                <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/shoulderRight.png"  >
             </span>
 
             <span id="RHand" class="fullarms hand">
                 <!--Change Animation & Image-->
-                <!--<img>-->
+                <img src="projectAssets/hairRight.png"  >
             </span>
 
             <span id="torso" class="body">
                 <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/torso.png"  >
             </span>
 
             <span id="dress" class="body">
                 <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/dress.png"  >
+            </span>
+
+            <span id="feet" class="body">
+                <!--Change Animation-->
+                <img src="projectAssets/feet.png"  >
             </span>
             
             <span id="LHair" class="hair">
                 <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/hairLeft.png"  >
+            </span>
+
+            <span id="MHair" class="hair">
+                <!--Change Animation-->
+                <img src="projectAssets/hairMain.png"  >
             </span>
                 
             <span id="RHair" class="hair">
                 <!--Change Animation-->
-                <!--<img>-->
+                <img src="projectAssets/hairRight.png"  >
             </span>
 
             <span id=""></span>
