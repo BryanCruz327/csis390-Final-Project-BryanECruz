@@ -124,12 +124,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 50px;
+            gap: 150px;
         }
 
         .food {
-            width: 50px;
-            height: 50px;
+            width: 175px;
+            height: 175px;
         }
 
         #cheese1,
@@ -143,6 +143,189 @@
             user-select: none;
             position: absolute;
         }
+
+        .hitbox{
+            position: absolute;
+            z-index: 150;
+        }
+
+
+        #browsHitBox{
+            position: absolute;
+            width: 70px;
+            height: 20px;
+            top: 245px;
+            left: 340px;
+            z-index: 1000;
+            background-color: rgba(0, 255, 255, 0.178);
+        }
+
+        #noseHitBox{
+            position: absolute;
+            width: 25px;
+            height: 10px;
+            top: 290px;
+            left: 363px;
+            z-index: 1000;
+            background-color: rgba(26, 255, 0, 0.188);
+        }
+
+        #mouthHitbox{
+            position: absolute;
+            width: 25px;
+            height: 10px;
+            top: 305px;
+            left: 364px;
+            z-index: 1000;
+            background-color: #ff6e0048;
+        }
+
+        #bangsHitBox{
+            position: absolute;
+            width: 125px;
+            height: 45px;
+            top: 235px;
+            left: 313px;
+            z-index: 999;
+            background-color: #e500ff48;
+        }
+
+        #eyesHitbox{
+            position: absolute;
+            width: 80px;
+            height: 30px;
+            top: 268px;
+            left: 335px;
+            z-index: 998;
+            background-color: #0077ff48;
+        }
+
+        #headHitbox{
+            position: absolute;
+            width: 80px;
+            height: 55px;
+            top: 265px;
+            left: 335px;
+            z-index: 997;
+            background-color: #004c6e48;
+        }
+
+        #crownHitbox{
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            top: 105px;
+            left: 275px;
+            transform: rotate(333deg);
+            z-index: 600;
+            background-color: #676e0048;
+        }
+
+        #LShoulderHitbox{
+            position: absolute;
+            width: 55px;
+            height: 80px;
+            top: 305px;
+            left: 290px;
+            transform: rotate(17deg);
+            z-index: 980;
+            background-color: #7a0a9f48;
+        }
+
+        #LHandHitbox{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 382px;
+            left: 267px;
+            transform: rotate(17deg);
+            z-index: 981;
+            background-color: #99008648;
+        }
+
+        #RShoulderHitbox{
+            position: absolute;
+            width: 55px;
+            height: 80px;
+            top: 305px;
+            left: 405px;
+            transform: rotate(-17deg);
+            z-index: 980;
+            background-color: #7a0a9f48;
+        }
+
+        #RHandHitbox{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 382px;
+            left: 424px;
+            transform: rotate(-17deg);
+            z-index: 981;
+            background-color: #99008648;
+        }
+
+        #torsoHitbox{
+            position: absolute;
+            width: 70px;
+            height: 50px;
+            top: 321px;
+            left: 340px;
+            z-index: 982;
+            background-color: #29452148;
+        }
+
+        #dressHitbox{
+            position: absolute;
+            width: 325px;
+            height: 170px;
+            top: 365px;
+            left: 212px;
+            z-index: 970;
+            background-color: #76caff48;
+        }
+
+        #feetHitbox{
+            position: absolute;
+            width: 230px;
+            height: 32px;
+            top: 528px;
+            left: 260px;
+            z-index: 500;
+            background-color: #76ff9248;
+        }
+
+        #LHairHitbox{
+            position: absolute;
+            width: 375px;
+            height: 375px;
+            top: 32px;
+            left: 0px;
+            z-index: 500;
+            background-color: #ff950248;
+        }
+
+        #MHairHitbox{
+            position: absolute;
+            width: 237px;
+            height: 158px;
+            top: 210px;
+            left: 255px;
+            z-index: 945;
+            background-color: #ff000048;
+        }
+
+        #RHairHitbox{
+            position: absolute;
+            width: 375px;
+            height: 375px;
+            top: 32px;
+            left: 385px;
+            z-index: 500;
+            background-color: #e600ff48;
+        }
+
+
     </style>
 
 </head>
@@ -162,6 +345,24 @@
         </aside>
 
         <div id="character" class="container">
+            <span id="browsHitBox" class="hitBox">Brows</span>
+            <span id="noseHitBox" class="hitBox">Nose</span>
+            <span id="bangsHitBox" class="hitBox">Bangs</span>
+            <span id="eyesHitbox" class="hitBox">Eyes</span>
+            <span id="mouthHitbox" class="hitBox">Mouth</span>
+            <span id="headHitbox" class="hitBox">Head</span>
+            <span id="crownHitbox" class="hitBox">Crown</span>
+            <span id="LShoulderHitbox" class="hitBox">LShoulder</span>
+            <span id="LHandHitbox" class="hitBox">LHand</span>
+            <span id="RShoulderHitbox" class="hitBox">RShoulder</span>
+            <span id="RHandHitbox" class="hitBox">RHand</span>
+            <span id="torsoHitbox" class="hitBox">Torso</span>
+            <span id="dressHitbox" class="hitBox">Dress</span>
+            <span id="feetHitbox" class="hitBox">Feet</span>
+            <span id="LHairHitbox" class="hitBox">LHair</span>
+            <span id="MHairHitbox" class="hitBox">MHair</span>
+            <span id="RHairHitbox" class="hitBox">RHair</span>
+
             <span id="brows" class="bodyPart">
                 <!--Change Image-->
                 <img src="projectAssets/brows.png">
