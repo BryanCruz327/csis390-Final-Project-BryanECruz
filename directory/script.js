@@ -2,15 +2,16 @@ let isDraggingCheese = false;
 let offsetX, offsetY;
 let currentCheese = null;
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const cheese1 = document.getElementById('cheese1');
     const cheese2 = document.getElementById('cheese2');
     const cheese3 = document.getElementById('cheese3');
     const cheese4 = document.getElementById('cheese4');
-    const cheese5 = document.getElementById('cheese5');
     const mouthSpan = document.getElementById('mouth');
 
-    const cheeses = [cheese1, cheese2, cheese3, cheese4, cheese5];
+    const cheeses = [cheese1, cheese2, cheese3, cheese4];
 
     cheeses.forEach((cheese) => {
         cheese.style.position = 'absolute';

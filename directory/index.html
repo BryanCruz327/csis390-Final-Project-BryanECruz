@@ -9,325 +9,6 @@
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 
-    <style>
-        .flexContainer {
-            display: flex;
-            flex-direction: row;
-            -ms-flex-align: center;
-        }
-
-        nav {
-            width: 100px;
-        }
-
-        #character {
-            position: relative;
-            left: 400px;
-            width: 500px;
-        }
-
-        img {
-            position: absolute;
-            width: 750px;
-        }
-
-        #brows {
-            position: absolute;
-            z-index: 99;
-        }
-
-        #mouth {
-            position: absolute;
-            z-index: 99;
-        }
-
-        #nose {
-            position: absolute;
-            z-index: 99;
-        }
-
-        #bangs {
-            position: absolute;
-            z-index: 98;
-        }
-
-        #eyes {
-            position: absolute;
-            z-index: 97;
-        }
-
-        #head {
-            position: absolute;
-            z-index: 96;
-        }
-
-        #MHair {
-            position: absolute;
-            z-index: 95;
-        }
-
-        #crown {
-            position: absolute;
-            z-index: 1;
-        }
-
-        #torso {
-            position: absolute;
-            z-index: 93;
-        }
-
-        .fullarms {
-            position: absolute;
-        }
-
-        .hand {
-            z-index: 92;
-        }
-
-        .shoulder {
-            z-index: 91;
-        }
-
-        #dress {
-            position: absolute;
-            z-index: 90;
-        }
-
-        #LHair {
-            position: absolute;
-            z-index: -1;
-        }
-
-        #RHair {
-            position: absolute;
-            z-index: -11;
-        }
-
-        #MHair {
-            position: absolute;
-            z-index: 10;
-        }
-
-        #feet {
-            position: absolute;
-            z-index: 1;
-        }
-
-        body {
-            background-color: rgb(255, 255, 0);
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 150px;
-        }
-
-        .food {
-            width: 175px;
-            height: 175px;
-        }
-
-        #cheese1,
-        #cheese2,
-        #cheese3,
-        #cheese4,
-        #cheese5 {
-            z-index: 100;
-            opacity: 1;
-            cursor: grab;
-            user-select: none;
-            position: absolute;
-        }
-
-        .hitbox{
-            position: absolute;
-            z-index: 150;
-        }
-
-
-        #browsHitBox{
-            position: absolute;
-            width: 70px;
-            height: 20px;
-            top: 245px;
-            left: 340px;
-            z-index: 1000;
-            background-color: rgba(0, 255, 255, 0.178);
-        }
-
-        #noseHitBox{
-            position: absolute;
-            width: 25px;
-            height: 10px;
-            top: 290px;
-            left: 363px;
-            z-index: 1000;
-            background-color: rgba(26, 255, 0, 0.188);
-        }
-
-        #mouthHitbox{
-            position: absolute;
-            width: 25px;
-            height: 10px;
-            top: 305px;
-            left: 364px;
-            z-index: 1000;
-            background-color: #ff6e0048;
-        }
-
-        #bangsHitBox{
-            position: absolute;
-            width: 125px;
-            height: 45px;
-            top: 235px;
-            left: 313px;
-            z-index: 999;
-            background-color: #e500ff48;
-        }
-
-        #eyesHitbox{
-            position: absolute;
-            width: 80px;
-            height: 30px;
-            top: 268px;
-            left: 335px;
-            z-index: 998;
-            background-color: #0077ff48;
-        }
-
-        #headHitbox{
-            position: absolute;
-            width: 80px;
-            height: 55px;
-            top: 265px;
-            left: 335px;
-            z-index: 997;
-            background-color: #004c6e48;
-        }
-
-        #crownHitbox{
-            position: absolute;
-            width: 80px;
-            height: 120px;
-            top: 105px;
-            left: 275px;
-            transform: rotate(333deg);
-            z-index: 600;
-            background-color: #676e0048;
-        }
-
-        #LShoulderHitbox{
-            position: absolute;
-            width: 55px;
-            height: 80px;
-            top: 305px;
-            left: 290px;
-            transform: rotate(17deg);
-            z-index: 980;
-            background-color: #7a0a9f48;
-        }
-
-        #LHandHitbox{
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            top: 382px;
-            left: 267px;
-            transform: rotate(17deg);
-            z-index: 981;
-            background-color: #99008648;
-        }
-
-        #RShoulderHitbox{
-            position: absolute;
-            width: 55px;
-            height: 80px;
-            top: 305px;
-            left: 405px;
-            transform: rotate(-17deg);
-            z-index: 980;
-            background-color: #7a0a9f48;
-        }
-
-        #RHandHitbox{
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            top: 382px;
-            left: 424px;
-            transform: rotate(-17deg);
-            z-index: 981;
-            background-color: #99008648;
-        }
-
-        #torsoHitbox{
-            position: absolute;
-            width: 70px;
-            height: 50px;
-            top: 321px;
-            left: 340px;
-            z-index: 982;
-            background-color: #29452148;
-        }
-
-        #dressHitbox{
-            position: absolute;
-            width: 325px;
-            height: 170px;
-            top: 365px;
-            left: 212px;
-            z-index: 970;
-            background-color: #76caff48;
-        }
-
-        #feetHitbox{
-            position: absolute;
-            width: 230px;
-            height: 32px;
-            top: 528px;
-            left: 260px;
-            z-index: 500;
-            background-color: #76ff9248;
-        }
-
-        #LHairHitbox{
-            position: absolute;
-            width: 375px;
-            height: 375px;
-            top: 32px;
-            left: 0px;
-            z-index: 500;
-            background-color: #ff950248;
-        }
-
-        #MHairHitbox{
-            position: absolute;
-            width: 237px;
-            height: 158px;
-            top: 210px;
-            left: 255px;
-            z-index: 945;
-            background-color: #ff000048;
-        }
-
-        #RHairHitbox{
-            position: absolute;
-            width: 375px;
-            height: 375px;
-            top: 32px;
-            left: 385px;
-            z-index: 500;
-            background-color: #e600ff48;
-        }
-
-
-    </style>
-
 </head>
 
 <body>
@@ -339,7 +20,6 @@
                     <li><img src="projectAssets/cheese.png" class="food" id="cheese2"></li>
                     <li><img src="projectAssets/cheese.png" class="food" id="cheese3"></li>
                     <li><img src="projectAssets/cheese.png" class="food" id="cheese4"></li>
-                    <li><img src="projectAssets/cheese.png" class="food" id="cheese5"></li>
                 </ul>
             </nav>
         </aside>
@@ -363,35 +43,34 @@
             <span id="MHairHitbox" class="hitBox">MHair</span>
             <span id="RHairHitbox" class="hitBox">RHair</span>
 
-            <span id="brows" class="bodyPart">
-                <!--Change Image-->
+            <span id="brows" class="bodyPart head">
                 <img src="projectAssets/brows.png">
             </span>
 
-            <span id="nose" class="bodyPart">
+            <span id="nose" class="bodyPart head">
                 <img src="projectAssets/nose.png">
             </span>
 
-            <span id="bangs" class="bodyPart">
+            <span id="bangs" class="bodyPart head">
                 <img src="projectAssets/bangs.png">
             </span>
 
-            <span id="eyes" class="bodyPart">
+            <span id="eyes" class="bodyPart head">
                 <!--Change Image-->
                 <img src="projectAssets/eyesOpened.png">
             </span>
 
-            <span id="mouth" class="bodyPart">
+            <span id="mouth" class="bodyPart head">
                 <!--Change Image-->
                 <img src="projectAssets/mouth.png">
             </span>
 
-            <span id="head" class="bodyPart">
+            <span id="head" class="bodyPart head">
                 <!--Change Animation-->
                 <img src="projectAssets/head.png">
             </span>
 
-            <span id="crown" class="bodyPart">
+            <span id="crown" class="bodyPart head">
                 <!--Change Animation-->
                 <img src="projectAssets/crown.png">
             </span>
@@ -431,24 +110,41 @@
                 <img src="projectAssets/feet.png">
             </span>
 
-            <span id="LHair" class="hair bodyPart">
+            <span id="LHair" class="hair bodyPart head">
                 <!--Change Animation-->
                 <img src="projectAssets/hairLeft.png">
             </span>
 
-            <span id="MHair" class="hair bodyPart">
+            <span id="MHair" class="hair bodyPart head">
                 <!--Change Animation-->
                 <img src="projectAssets/hairMain.png">
             </span>
 
-            <span id="RHair" class="hair bodyPart">
+            <span id="RHair" class="hair bodyPart head">
                 <!--Change Animation-->
                 <img src="projectAssets/hairRight.png">
             </span>
-        </div>
 
+            <span class="windows" id="w1">
+                <img src="projectAssets/window.png">
+            </span>
+
+            <span class="windows" id="w2">
+                <img src="projectAssets/window.png">
+            </span>
+        </div>
     </span>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+
+    </footer>
 
 </body>
 
