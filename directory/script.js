@@ -12,7 +12,7 @@ function boop(){
     
     setTimeout(()=>{
         document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
-    }, 1000);
+    }, 2500);
 };
 
 
@@ -29,7 +29,7 @@ function rightWink(){
     
     setTimeout(()=>{
         document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
-    }, 1000);
+    }, 1500);
 };
 
 function leftWink(){
@@ -38,7 +38,7 @@ function leftWink(){
     
     setTimeout(()=>{
         document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
-    }, 1000);
+    }, 1500);
 };
 
 
@@ -51,7 +51,7 @@ function blinking(){
     }, 200)
 };
 
-setInterval(blinking, 3000);
+setInterval(blinking, 3500);
 
 document.addEventListener('DOMContentLoaded', () => {
     const cheese1 = document.getElementById('cheese1');
@@ -103,16 +103,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentCheese.style.opacity = '0';
                 setTimeout(() => {
                     currentCheese.style.visibility = 'hidden';
+
                 }, 300);
 
+                document.getElementById("RShoulder").style.animation="eatingRS 2s";
+                document.getElementById("LShoulder").style.animation="eatingLS 2s";
+                document.getElementById("RHand").style.animation="eatingRH 2s";
+                document.getElementById("LHand").style.animation="eatingLH 2s";
 
-            } else {
+            } 
+            
+            else {
                 console.log('Not close enough');
             }
 
             currentCheese.style.cursor = 'grab';
             isDraggingCheese = false;
             currentCheese = null;
+
+            
         }
     });
+    
+        document.getElementById("RShoulder").style.animation="neutralRArm 5s infinite";
+        document.getElementById("LShoulder").style.animation="neutralLArm 5s infinite";
+        document.getElementById("RHand").style.animation="neutralRArm 5s infinite";
+        document.getElementById("LHand").style.animation="neutralLArm 5s infinite";
 });

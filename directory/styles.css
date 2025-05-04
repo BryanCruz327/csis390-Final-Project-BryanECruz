@@ -207,22 +207,6 @@ nav ul {
     left: 275px;
 }
 
-.hitbox{
-    position: absolute;
-    z-index: 150;
-}
-
-
-#browsHitBox{
-    position: absolute;
-    width: 70px;
-    height: 20px;
-    top: 245px;
-    left: 340px;
-    z-index: 1000;
-    background-color: rgba(0, 255, 255, 0.178);
-}
-
 #noseHitBox{
     position: absolute;
     width: 25px;
@@ -230,27 +214,7 @@ nav ul {
     top: 290px;
     left: 363px;
     z-index: 1000;
-    background-color: rgba(26, 255, 0, 0.188);
-}
-
-#mouthHitbox{
-    position: absolute;
-    width: 25px;
-    height: 10px;
-    top: 305px;
-    left: 364px;
-    z-index: 1000;
-    background-color: #ff6e0048;
-}
-
-#bangsHitBox{
-    position: absolute;
-    width: 125px;
-    height: 45px;
-    top: 235px;
-    left: 313px;
-    z-index: 999;
-    background-color: #e500ff48;
+    /* background-color: rgba(26, 255, 0, 0.188); */
 }
 
 #eyesHitboxR{
@@ -260,7 +224,7 @@ nav ul {
     top: 268px;
     left: 375px;
     z-index: 998;
-    background-color: #0077ff48;
+    /* background-color: #0077ff48; */
 }
 
 #eyesHitboxL{
@@ -270,132 +234,7 @@ nav ul {
     top: 268px;
     left: 335px;
     z-index: 998;
-    background-color: #0077ff48;
-}
-
-#headHitbox{
-    position: absolute;
-    width: 80px;
-    height: 55px;
-    top: 265px;
-    left: 335px;
-    z-index: 997;
-    background-color: #004c6e48;
-}
-
-#crownHitbox{
-    position: absolute;
-    width: 80px;
-    height: 120px;
-    top: 105px;
-    left: 275px;
-    transform: rotate(333deg);
-    z-index: 600;
-    background-color: #676e0048;
-}
-
-#LShoulderHitbox{
-    position: absolute;
-    width: 55px;
-    height: 80px;
-    top: 305px;
-    left: 290px;
-    transform: rotate(17deg);
-    z-index: 980;
-    background-color: #7a0a9f48;
-}
-
-#LHandHitbox{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 382px;
-    left: 267px;
-    transform: rotate(17deg);
-    z-index: 981;
-    background-color: #99008648;
-}
-
-#RShoulderHitbox{
-    position: absolute;
-    width: 55px;
-    height: 80px;
-    top: 305px;
-    left: 405px;
-    transform: rotate(-17deg);
-    z-index: 980;
-    background-color: #7a0a9f48;
-}
-
-#RHandHitbox{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 382px;
-    left: 424px;
-    transform: rotate(-17deg);
-    z-index: 981;
-    background-color: #99008648;
-}
-
-#torsoHitbox{
-    position: absolute;
-    width: 70px;
-    height: 50px;
-    top: 321px;
-    left: 340px;
-    z-index: 982;
-    background-color: #29452148;
-}
-
-#dressHitbox{
-    position: absolute;
-    width: 325px;
-    height: 170px;
-    top: 365px;
-    left: 212px;
-    z-index: 970;
-    background-color: #76caff48;
-}
-
-#feetHitbox{
-    position: absolute;
-    width: 230px;
-    height: 32px;
-    top: 528px;
-    left: 260px;
-    z-index: 500;
-    background-color: #76ff9248;
-}
-
-#LHairHitbox{
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 32px;
-    left: 0px;
-    z-index: 500;
-    background-color: #ff950248;
-}
-
-#MHairHitbox{
-    position: absolute;
-    width: 237px;
-    height: 158px;
-    top: 210px;
-    left: 255px;
-    z-index: 945;
-    background-color: #ff000048;
-}
-
-#RHairHitbox{
-    position: absolute;
-    width: 375px;
-    height: 375px;
-    top: 32px;
-    left: 385px;
-    z-index: 500;
-    background-color: #e600ff48;
+    /* background-color: #0077ff48; */
 }
 
 @keyframes neutralLArm {
@@ -542,12 +381,175 @@ nav ul {
     }
 }
 
-@keyframes blink {
+@keyframes eatingH {
+    0%{
+        top: 0px;
+    }
 
+    25%{
+        top: -2px;
+    }
+
+    50%{
+        top: 0px;
+    }
+
+    75%{
+        top: -2px;
+    }
+
+    100%{
+        top: 0px;
+    }
 }
 
-@keyframes eating {
-    
+@keyframes eatingRS {
+
+    0%{
+        transform: scaleX(0.5) rotate(-242deg);
+        top: 112px;
+        left: 665px;
+        z-index: 100;
+    }
+
+    25%{
+        transform: scaleX(0.5) rotate(-242deg);
+        top: 107px;
+        left: 665px;
+        z-index: 100;
+    }
+
+    50%{
+        transform: scaleX(0.5) rotate(-242deg);
+        top: 112px;
+        left: 665px;
+        z-index: 100;
+    }
+
+    75%{
+        transform: scaleX(0.5) rotate(-242deg);
+        top: 107px;
+        left: 665px;
+        z-index: 100;
+    }
+
+    100%{
+        transform: scaleX(0.5) rotate(-242deg);
+        top: 112px;
+        left: 665px;
+        z-index: 100;
+    }
+}
+
+@keyframes eatingRH {
+    0%{
+        transform: rotate(-223deg);
+        top: 317px;
+        left: 994px;
+        z-index: 100;
+    }
+
+    25%{
+        transform: rotate(-223deg);
+        top: 312px;
+        left: 994px;
+        z-index: 100;
+    }
+
+    50%{
+        transform: rotate(-223deg);
+        top: 317px;
+        left: 994px;
+        z-index: 100;
+    }
+
+    75%{
+        transform: rotate(-223deg);
+        top: 312px;
+        left: 994px;
+        z-index: 100;
+    }
+
+    100%{
+        transform: rotate(-223deg);
+        top: 317px;
+        left: 994px;
+        z-index: 100;
+    }
+}
+
+@keyframes eatingLS {
+    0%{
+        transform: scaleX(0.5) rotate(242deg);
+        top: 776px;
+        left: 263px;
+        z-index: 100;
+    }
+
+    25%{
+        transform: scaleX(0.5) rotate(242deg);
+        top: 771px;
+        left: 263px;
+        z-index: 100;
+    }
+
+    50%{
+        transform: scaleX(0.5) rotate(242deg);
+        top: 776px;
+        left: 263px;
+        z-index: 100;
+    }
+
+    75%{
+        transform: scaleX(0.5) rotate(242deg);
+        top: 771px;
+        left: 263px;
+        z-index: 100;
+    }
+
+    100%{
+        transform: scaleX(0.5) rotate(242deg);
+        top: 776px;
+        left: 263px;
+        z-index: 100;
+    }
+}
+
+@keyframes eatingLH {
+    0%{
+        transform: rotate(223deg);
+        top: 829px;
+        left: 310px;
+        z-index: 100;
+    }
+
+    25%{
+        transform: rotate(223deg);
+        top: 823px;
+        left: 310px;
+        z-index: 100;
+    }
+
+    50%{
+        transform: rotate(223deg);
+        top: 829px;
+        left: 310px;
+        z-index: 100;
+    }
+
+    75%{
+        transform: rotate(223deg);
+        top: 823px;
+        left: 310px;
+        z-index: 100;
+    }
+
+    100%{
+        transform: rotate(223deg);
+        top: 829px;
+        left: 310px;
+        z-index: 100;
+    }
 }
 
 #eyesHitbox{
