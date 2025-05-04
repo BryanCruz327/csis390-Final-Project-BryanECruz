@@ -2,7 +2,28 @@ let isDraggingCheese = false;
 let offsetX, offsetY;
 let currentCheese = null;
 
+let eyesHitbox = document.getElementById("eyesHitbox");
 
+eyesHitbox.addEventListener("click", changeEyes);
+
+function changeEyes(){
+    document.getElementById("eyesImage").src = "projectAssets/eyesClosed.png";
+    console.log("Clicked Eyes");
+    
+    setTimeout(()=>{
+        document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
+    }, 1000);
+};
+
+function blinking(){
+    document.getElementById("eyesImage").src = "projectAssets/eyesClosed.png";
+
+    setTimeout(()=>{
+        document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
+    }, 200)
+};
+
+setInterval(blinking, 3000);
 
 document.addEventListener('DOMContentLoaded', () => {
     const cheese1 = document.getElementById('cheese1');
@@ -53,8 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentCheese.style.transition = 'opacity 0.3s';
                 currentCheese.style.opacity = '0';
                 setTimeout(() => {
-                    currentCheese.style.display = 'none';
+                    currentCheese.style.visibility = 'hidden';
                 }, 300);
+
+
             } else {
                 console.log('Not close enough');
             }

@@ -14,7 +14,7 @@ aside {
 }
 
 .hitBox{
-    visibility: hidden;
+    visibility: visible;
 }
 
 img {
@@ -200,11 +200,11 @@ nav ul {
 }
 
 #w1{
-    left: -350px;
+    left: -260px;
 }
 
 #w2{
-    left: 370px;
+    left: 275px;
 }
 
 .hitbox{
