@@ -2,11 +2,11 @@ let isDraggingCheese = false;
 let offsetX, offsetY;
 let currentCheese = null;
 
-let eyesHitbox = document.getElementById("eyesHitbox");
+let noseHitBox = document.getElementById("noseHitBox");
 
-eyesHitbox.addEventListener("click", changeEyes);
+noseHitBox.addEventListener("click", boop);
 
-function changeEyes(){
+function boop(){
     document.getElementById("eyesImage").src = "projectAssets/eyesClosed.png";
     console.log("Clicked Eyes");
     
@@ -14,6 +14,34 @@ function changeEyes(){
         document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
     }, 1000);
 };
+
+
+
+let rightEyeHitBox = document.getElementById("eyesHitboxR");
+let leftEyeHitBox = document.getElementById("eyesHitboxL");
+
+rightEyeHitBox.addEventListener("click", rightWink);
+leftEyeHitBox.addEventListener("click", leftWink);
+
+function rightWink(){
+    document.getElementById("eyesImage").src = "projectAssets/eyesRightWink.png";
+    console.log("Clicked Eyes");
+    
+    setTimeout(()=>{
+        document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
+    }, 1000);
+};
+
+function leftWink(){
+    document.getElementById("eyesImage").src = "projectAssets/eyesLeftWink.png";
+    console.log("Clicked Eyes");
+    
+    setTimeout(()=>{
+        document.getElementById("eyesImage").src = "projectAssets/eyesOpened.png";
+    }, 1000);
+};
+
+
 
 function blinking(){
     document.getElementById("eyesImage").src = "projectAssets/eyesClosed.png";

@@ -253,9 +253,19 @@ nav ul {
     background-color: #e500ff48;
 }
 
-#eyesHitbox{
+#eyesHitboxR{
     position: absolute;
-    width: 80px;
+    width: 40px;
+    height: 30px;
+    top: 268px;
+    left: 375px;
+    z-index: 998;
+    background-color: #0077ff48;
+}
+
+#eyesHitboxL{
+    position: absolute;
+    width: 40px;
     height: 30px;
     top: 268px;
     left: 335px;
